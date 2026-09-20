@@ -26,8 +26,8 @@ jobs:
 
       - name: Create Flutter Project Skeleton
         run: |
-          # 自动补全 android 工程文件架构
-          flutter create . --platforms=android --org=com.example.exam
+          # 显式指定合法的项目包名 (使用下划线 my_exam_app)
+          flutter create . --project-name my_exam_app --platforms=android --org=com.example.exam
 
       - name: Install Dependencies
         run: flutter pub get
