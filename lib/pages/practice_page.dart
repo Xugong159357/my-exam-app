@@ -158,7 +158,7 @@ class _PracticePageState extends State<PracticePage> {
           title: Text("第 ${groupIndex + 1} 组练习完成！"),
           content: Column(
             mainAxisSize: MainAxisSize.min,
-            crossCrossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text("本组共练习：$totalInGroup 题"),
               const SizedBox(height: 8),
